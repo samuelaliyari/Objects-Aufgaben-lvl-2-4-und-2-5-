@@ -1,0 +1,92 @@
+
+
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background-color: #14213D;
+    color: #E5E5E5;
+    text-align: center;
+    margin-top: 10%;
+    form {
+        input {
+            color: #FCA311;
+            font-size: 2rem;
+            border-radius: 1rem;
+            background-color: #14213D;
+            border: 2px solid #FCA311;
+            padding: 0.5rem 2rem;
+            margin-left: 0.5rem;
+            &:nth-of-type(1){
+                width: 25%;
+                padding: 0.5rem 1rem;
+                margin-right: 0.5rem;
+                &:focus {
+                    outline: none;
+                    background-color: #000000;
+                }
+            }
+            &:nth-of-type(2) {
+                &:hover {
+                    background-color: #000000;
+                }
+            }
+        }
+    }
+    section {
+        margin: 10%;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding-bottom: 5rem;
+        article {
+            border: 3px solid #FCA311;
+            padding: 0.2rem;
+            width: 25%;
+            
+            p{
+                font-size: 1.5rem;
+                width: 100%;
+                height: 6rem;
+                padding: 0.3rem;
+                text-align: center;
+                border: 1px solid #FCA311;
+                font-weight: 300;
+                padding-top: 1rem;
+                &:nth-of-type(1) {
+                    color: #FCA311;
+                    padding-top: 1.5rem;
+                    font-size: 2rem;
+                    &:hover {
+                        background-color: #14213D;
+                        color: #E5E5E5;
+                    }
+                }
+            }
+        }
+    }
+}
